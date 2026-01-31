@@ -38,28 +38,6 @@ ShopVibe is a modern, responsive e-commerce web application built with a vanilla
 - **Backend**: Node.js, Express.js.
 - **Data**: In-memory data structures (Mock database using JavaScript arrays).
 
-## 📂 Project Structure
-
-```
-ShopVibe/
-├── backend/
-│   ├── node_modules/
-│   ├── products.js       # Product data source
-│   ├── server.js         # Express server entry point
-│   └── package.json
-├── frontend/
-│   ├── assets/           # Images and static resources
-│   ├── home page/
-│   │   ├── home.html
-│   │   ├── home.css
-│   │   └── home.js
-│   ├── search/
-│   │   ├── search.html
-│   │   └── search.js
-│   └── ...
-└── README.md
-```
-
 ## ⚡ Installation & Setup
 
 1.  **Prerequisites**: Ensure you have [Node.js](https://nodejs.org/) installed on your machine.
@@ -83,15 +61,3 @@ ShopVibe/
 5.  **Access the Application**:
     Open your browser and navigate to:
     `http://localhost:3000`
-
-## 📡 API Documentation
-
-| Method | Endpoint | Description |
-| :--- | :--- | :--- |
-| `GET` | `/api/products` | Get all products. Supports `?search=` query. |
-| `GET` | `/api/products/:id` | Get a single product by ID. |
-| `GET` | `/api/categories` | Get list of unique product categories. |
-| `GET` | `/api/config/slider` | Get configuration for home page slider images. |
-| `GET` | `/api/cart` | Get current cart items. |
-| `POST` | `/api/cart` | Add item to cart. Body: `{ productId, quantity }` |
-| `POST` | `/api/wishlist` | Add item to wishlist. Body: `{ productId }` |
